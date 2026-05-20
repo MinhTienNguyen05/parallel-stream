@@ -11,7 +11,7 @@ import java.security.MessageDigest;
 public class ParallelSeminarDemo {
     public static void main(String[] args) throws Exception{
         System.setProperty("hadoop.home.dir", "/");
-        String filePath = "review_philadelphia_500mb.parquet";
+        String filePath = "review_philadelphia_500rows.parquet";
 
         System.out.println("Loading data from Parquet file");
         List<String> reviews = loadParquet(filePath);
